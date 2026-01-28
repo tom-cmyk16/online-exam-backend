@@ -64,7 +64,7 @@ app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 app.use("/api", assignmentRoutes);
 app.use("/api/departments", departmentRoute);
 app.use("/api/courses", courseRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/auth", authRoutes);
 app.use("/api/manageuser", manageUserRoutes);
 app.use("/api/activity", activityRoutes);
 app.use("/api/exams", examRoutes);
